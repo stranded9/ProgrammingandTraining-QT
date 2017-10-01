@@ -7,7 +7,7 @@
 #include <QTime>
 #include <QTimer>
 #include <QMessageBox>
-#include <Qsound>
+#include <QSound>
 #include <QPainter>
 #include "game.h"
 
@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     freemod = false;
     setWindowTitle(tr("sudoku"));
-    bgm = new QSound(":/sound/bgm");
+    bgm = new QSound(":/sound/sound/bgm.wav");
     game = new Game();
     guess = new int*[9];
     for (int i = 0; i < 9; ++i)
@@ -36,11 +36,11 @@ MainWindow::MainWindow(QWidget *parent) :
     colorstyle[2] = "background-color:rgb(135,206,250)"; // same row/col
     colorstyle[3] = "background-color:rgb(255,250,240)"; // normal
 
-    QPixmap pixPause(":/icon/pause.jpg");
+    QPixmap pixPause(":/icon/icon/pause.jpg");
     pauseIcon = new QIcon(pixPause);
     ui->b_pause->setIcon(*pauseIcon);
     ui->b_pause->show();
-    QPixmap pixContinue(":/icon/continue.jpg");
+    QPixmap pixContinue(":/icon/icon/continue.jpg");
     continueIcon = new QIcon(pixContinue);
     ui->b_continue->setIcon(*continueIcon);
     ui->b_continue->show();
