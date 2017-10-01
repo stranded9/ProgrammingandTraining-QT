@@ -1,5 +1,8 @@
 
+# mac
 .DS_Store
 
+# qt
+/build-*/
 *.pro.user
 *.pro.user.*
