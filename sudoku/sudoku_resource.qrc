@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>continue.jpg</file>
+        <file>pause.jpg</file>
+    </qresource>
+    <qresource prefix="/sound">
+        <file alias="bgm">bgm.wav</file>
+    </qresource>
+</RCC>
