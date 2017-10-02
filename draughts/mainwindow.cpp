@@ -21,9 +21,9 @@ MainWindow::MainWindow(QWidget *parent) :
     grid_size = 50;
     setFixedSize(window_width, window_height);
 
-    sound = new QSound(":/sound/sound.wav");
-    winsound = new QSound(":/sound/win.wav");
-    losesound = new QSound(":/sound/lose.wav");
+    sound = new QSound(":/sound/sound/sound.wav");
+    winsound = new QSound(":/sound/sound/win.wav");
+    losesound = new QSound(":/sound/sound/lose.wav");
 
     /* // failed
     QString localHostName = QHostInfo::localHostName();
@@ -228,8 +228,8 @@ void MainWindow::paintEvent(QPaintEvent* ev)
     QPainter p(this);
     QPen pen1(Qt::black, 5);
     QPen pen2(Qt::black, 1);
-    QPixmap lightpixmap(":/pic/light.jpg");
-    QPixmap darkpixmap(":/pic/dark.jpg");
+    QPixmap lightpixmap(":/pic/pic/light.jpg");
+    QPixmap darkpixmap(":/pic/pic/dark.jpg");
     //QBrush light(QColor(222,184,135));
     //QBrush dark(QColor(160,82,45));
     //QBrush light(lightpixmap), dark(darkpixmap);

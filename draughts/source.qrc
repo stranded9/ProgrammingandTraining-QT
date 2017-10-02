@@ -1,11 +1,11 @@
 <RCC>
     <qresource prefix="/sound">
-        <file>sound.wav</file>
-        <file>lose.wav</file>
-        <file>win.wav</file>
+        <file>sound/lose.wav</file>
+        <file>sound/win.wav</file>
+        <file>sound/sound.wav</file>
     </qresource>
     <qresource prefix="/pic">
-        <file>dark.jpg</file>
-        <file>light.jpg</file>
+        <file>pic/dark.jpg</file>
+        <file>pic/light.jpg</file>
     </qresource>
 </RCC>
